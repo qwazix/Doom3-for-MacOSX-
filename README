@@ -1,3 +1,7 @@
+### Update (@qwazix)
+
+Tried to make a standalone `.app` file but failed. I created a script that sets DYLD_LIBRARY_PATH though that works. You can find the results in releases. Just unpack the zip file inside the windows installation directory and execute `run`.
+
 Update:
 
 Modified to accomodate to the latest Mac OSX 10.9:

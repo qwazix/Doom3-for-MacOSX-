@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2DFD49DD147F60B100C51B13 /* libidlib_pic.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 812259800912BF1D005D34B9 /* libidlib_pic.a */; };
 		812258110912BC79005D34B9 /* snd_efxfile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8122565F0912BC78005D34B9 /* snd_efxfile.cpp */; };
 		812258120912BC79005D34B9 /* GEWindowWrapper_stub.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 812256620912BC78005D34B9 /* GEWindowWrapper_stub.cpp */; };
 		812258130912BC79005D34B9 /* edit_stub.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 812256630912BC79005D34B9 /* edit_stub.cpp */; };
@@ -224,8 +223,6 @@
 		8122590A0912BC79005D34B9 /* CollisionModel_rotate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8122580A0912BC79005D34B9 /* CollisionModel_rotate.cpp */; };
 		8122590B0912BC79005D34B9 /* CollisionModel_trace.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8122580B0912BC79005D34B9 /* CollisionModel_trace.cpp */; };
 		8122590C0912BC79005D34B9 /* CollisionModel_translate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8122580C0912BC79005D34B9 /* CollisionModel_translate.cpp */; };
-		812259930912BF7F005D34B9 /* libidlib_nopic.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 812259820912BF1D005D34B9 /* libidlib_nopic.a */; };
-		812259940912BF87005D34B9 /* liboggVorbis_nopic.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8122598F0912BF38005D34B9 /* liboggVorbis_nopic.a */; };
 		812259FF0912C27D005D34B9 /* Doom 3.rsrc in Resources */ = {isa = PBXBuildFile; fileRef = 812259FD0912C27C005D34B9 /* Doom 3.rsrc */; };
 		81225A000912C27D005D34B9 /* Doom3.icns in Resources */ = {isa = PBXBuildFile; fileRef = 812259FE0912C27C005D34B9 /* Doom3.icns */; };
 		81225A0D0912C2D3005D34B9 /* ASLCore.nib in Resources */ = {isa = PBXBuildFile; fileRef = 81225A0B0912C2D3005D34B9 /* ASLCore.nib */; };
@@ -239,7 +236,16 @@
 		9B8E7A9518D5503200A0E22A /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B8E7A9418D5503200A0E22A /* CoreAudio.framework */; };
 		9B8E7A9718D5503900A0E22A /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B8E7A9618D5503900A0E22A /* IOKit.framework */; };
 		9B8E7A9918D5504700A0E22A /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B8E7A9818D5504700A0E22A /* OpenGL.framework */; };
-		9B8E7A9E18D5640F00A0E22A /* game.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 81225B8B0912C731005D34B9 /* game.dylib */; };
+		9B8E7A9E18D5640F00A0E22A /* game.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 81225B8B0912C731005D34B9 /* game.dylib */; settings = {ATTRIBUTES = (Required, ); }; };
+		F05EFFD71FF97F1A0046F685 /* libidlib_pic.a in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 812259800912BF1D005D34B9 /* libidlib_pic.a */; };
+		F05EFFD81FF97F1A0046F685 /* libidlib_nopic.a in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 812259820912BF1D005D34B9 /* libidlib_nopic.a */; };
+		F05EFFD91FF97F1A0046F685 /* liboggVorbis_nopic.a in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 8122598F0912BF38005D34B9 /* liboggVorbis_nopic.a */; };
+		F05EFFDA1FF97F1A0046F685 /* game.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 81225B8B0912C731005D34B9 /* game.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		F05EFFDB1FF97F1A0046F685 /* libidlib_pic.a in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 812259800912BF1D005D34B9 /* libidlib_pic.a */; };
+		F05EFFDC1FF97F1A0046F685 /* libidlib_nopic.a in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 812259820912BF1D005D34B9 /* libidlib_nopic.a */; };
+		F05EFFE81FF99DE90046F685 /* libidlib_pic.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F05EFFE01FF99D300046F685 /* libidlib_pic.a */; };
+		F05EFFE91FF99DE90046F685 /* libidlib_nopic.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F05EFFE41FF99D4B0046F685 /* libidlib_nopic.a */; };
+		F05EFFEA1FF99DE90046F685 /* liboggVorbis_nopic.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F05EFFE61FF99D6A0046F685 /* liboggVorbis_nopic.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -292,7 +298,40 @@
 			remoteGlobalIDString = D2AAC0620554660B00DB518D;
 			remoteInfo = game;
 		};
+		F05EFFCA1FF97AE00046F685 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 81225B840912C731005D34B9 /* game.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC0620554660B00DB518D;
+			remoteInfo = game;
+		};
+		F05EFFDE1FF992750046F685 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 812259790912BF1D005D34B9 /* idlib.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC045055464E500DB518D;
+			remoteInfo = idlib_pic;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F05EFFCC1FF97AE00046F685 /* Embed Libraries */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F05EFFDA1FF97F1A0046F685 /* game.dylib in Embed Libraries */,
+				F05EFFD71FF97F1A0046F685 /* libidlib_pic.a in Embed Libraries */,
+				F05EFFD81FF97F1A0046F685 /* libidlib_nopic.a in Embed Libraries */,
+				F05EFFD91FF97F1A0046F685 /* liboggVorbis_nopic.a in Embed Libraries */,
+				F05EFFDB1FF97F1A0046F685 /* libidlib_pic.a in Embed Libraries */,
+				F05EFFDC1FF97F1A0046F685 /* libidlib_nopic.a in Embed Libraries */,
+			);
+			name = "Embed Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -661,6 +700,14 @@
 		9B8E7A9418D5503200A0E22A /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreAudio.framework; sourceTree = DEVELOPER_DIR; };
 		9B8E7A9618D5503900A0E22A /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/IOKit.framework; sourceTree = DEVELOPER_DIR; };
 		9B8E7A9818D5504700A0E22A /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/OpenGL.framework; sourceTree = DEVELOPER_DIR; };
+		F05EFFE01FF99D300046F685 /* libidlib_pic.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libidlib_pic.a; path = build/Release/libidlib_pic.a; sourceTree = "<group>"; };
+		F05EFFE21FF99D3A0046F685 /* sys */ = {isa = PBXFileReference; lastKnownFileType = folder; name = sys; path = ..; sourceTree = "<group>"; };
+		F05EFFE41FF99D4B0046F685 /* libidlib_nopic.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libidlib_nopic.a; path = build/Release/libidlib_nopic.a; sourceTree = "<group>"; };
+		F05EFFE61FF99D6A0046F685 /* liboggVorbis_nopic.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = liboggVorbis_nopic.a; path = build/Release/liboggVorbis_nopic.a; sourceTree = "<group>"; };
+		F05EFFEB1FF9A0D50046F685 /* libidlib_pic.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libidlib_pic.a; path = build/Release/libidlib_pic.a; sourceTree = "<group>"; };
+		F05EFFEC1FF9A0D50046F685 /* libidlib_nopic.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libidlib_nopic.a; path = build/Release/libidlib_nopic.a; sourceTree = "<group>"; };
+		F05EFFED1FF9A0D50046F685 /* liboggVorbis_nopic.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = liboggVorbis_nopic.a; path = build/Release/liboggVorbis_nopic.a; sourceTree = "<group>"; };
+		F05EFFEE1FF9A0F00046F685 /* libidlib_nopic.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libidlib_nopic.a; path = build/Release/libidlib_nopic.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -675,10 +722,10 @@
 				9B8E7A9318D5500500A0E22A /* libcurl.dylib in Frameworks */,
 				9B8E7A9118D54FFB00A0E22A /* OpenAL.framework in Frameworks */,
 				9B8E7A8D18D54FE700A0E22A /* Carbon.framework in Frameworks */,
-				2DFD49DD147F60B100C51B13 /* libidlib_pic.a in Frameworks */,
-				812259940912BF87005D34B9 /* liboggVorbis_nopic.a in Frameworks */,
-				812259930912BF7F005D34B9 /* libidlib_nopic.a in Frameworks */,
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				F05EFFEA1FF99DE90046F685 /* liboggVorbis_nopic.a in Frameworks */,
+				F05EFFE91FF99DE90046F685 /* libidlib_nopic.a in Frameworks */,
+				F05EFFE81FF99DE90046F685 /* libidlib_pic.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -714,6 +761,10 @@
 		29B97314FDCFA39411CA2CEA /* Doom3 */ = {
 			isa = PBXGroup;
 			children = (
+				F05EFFEC1FF9A0D50046F685 /* libidlib_nopic.a */,
+				F05EFFEE1FF9A0F00046F685 /* libidlib_nopic.a */,
+				F05EFFEB1FF9A0D50046F685 /* libidlib_pic.a */,
+				F05EFFED1FF9A0D50046F685 /* liboggVorbis_nopic.a */,
 				812256420912BC26005D34B9 /* Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
@@ -742,6 +793,10 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F05EFFE61FF99D6A0046F685 /* liboggVorbis_nopic.a */,
+				F05EFFE41FF99D4B0046F685 /* libidlib_nopic.a */,
+				F05EFFE21FF99D3A0046F685 /* sys */,
+				F05EFFE01FF99D300046F685 /* libidlib_pic.a */,
 				9B8E7A9818D5504700A0E22A /* OpenGL.framework */,
 				9B8E7A9618D5503900A0E22A /* IOKit.framework */,
 				9B8E7A9418D5503200A0E22A /* CoreAudio.framework */,
@@ -1302,13 +1357,16 @@
 				8D1107290486CEB800E47090 /* Resources */,
 				8D11072C0486CEB800E47090 /* Sources */,
 				8D11072E0486CEB800E47090 /* Frameworks */,
+				F05EFFCC1FF97AE00046F685 /* Embed Libraries */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				F05EFFDF1FF992750046F685 /* PBXTargetDependency */,
 				812259840912BF2B005D34B9 /* PBXTargetDependency */,
 				812259910912BF43005D34B9 /* PBXTargetDependency */,
 				81225B8D0912C73C005D34B9 /* PBXTargetDependency */,
+				F05EFFCB1FF97AE00046F685 /* PBXTargetDependency */,
 			);
 			name = "Doom 3";
 			productInstallPath = "$(HOME)/Applications";
@@ -1647,6 +1705,16 @@
 			name = game;
 			targetProxy = 81225B8C0912C73C005D34B9 /* PBXContainerItemProxy */;
 		};
+		F05EFFCB1FF97AE00046F685 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = game;
+			targetProxy = F05EFFCA1FF97AE00046F685 /* PBXContainerItemProxy */;
+		};
+		F05EFFDF1FF992750046F685 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = idlib_pic;
+			targetProxy = F05EFFDE1FF992750046F685 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -1715,7 +1783,10 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
-				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/../../curl/lib\"";
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(SRCROOT)/../../curl/lib\"",
+					"$(PROJECT_DIR)/build/Release",
+				);
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "";
 				PREBINDING = NO;
@@ -1731,7 +1802,9 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				COPY_PHASE_STRIP = YES;
-				FRAMEWORK_SEARCH_PATHS = "";
+				"DYLIB_INSTALL_NAME_BASE[arch=*]" = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/build/Release";
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "@rpath";
 				GCC_DYNAMIC_NO_PIC = YES;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
@@ -1747,7 +1820,13 @@
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_VERSION = "";
 				INFOPLIST_FILE = Info.plist;
-				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/../../curl/lib\"";
+				LD_RUNPATH_SEARCH_PATHS = "$(PROJECT_DIR)/build/Release";
+				"LD_RUNPATH_SEARCH_PATHS[arch=*]" = "@loader_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(SRCROOT)/../../curl/lib\"",
+					"$(PROJECT_DIR)/build/Release",
+				);
+				"LIBRARY_SEARCH_PATHS[arch=*]" = "@rpath";
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = (
 					"-finline",
